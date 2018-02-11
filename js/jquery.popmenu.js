@@ -1,6 +1,3 @@
-$(function(){
-            $('#pop2menu').pop2menu({'background':'#2F5376','borderRadius':'0','focusColor':'#FFAB2C'});
-})
 $(function () {
 
     $.fn.pop2menu = function (options) {
@@ -8,11 +5,11 @@ $(function () {
         var settings = $.extend({
             'controller': true,
             'width': '100%',
-            'background': '#34495e',
+            'background': '#34495e',							
             'borderRadius': '10px',
-            'top': '40',
+            'top': '48',
             'left': '0',
-            'iconSize': '45px',
+            'iconSize': '62px',
             'color': '#F7F7F7',
             'border': '0px'
         }, options);
@@ -31,6 +28,7 @@ $(function () {
             tar_body.css({
                 'display': temp_display,
                 'position': 'absolute',
+				'z-index': '9999',
                 'margin-top': -settings.top,
                 'margin-left': -settings.left,
                 'background': settings.background,

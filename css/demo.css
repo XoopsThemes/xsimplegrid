@@ -1,7 +1,7 @@
 #demo-switcher {
   position: fixed;
-  top: 90px;
-  z-index: 50;
+  bottom: 2px;
+  z-index: 9999;
   left: -265px;
   transition: .4s;
 }
@@ -16,12 +16,11 @@
 }
 .socialmenu {
   margin: 0;
-  height:55px;
+  height:52px;
   text-transform: uppercase;
   color: #2A6496;
   background-color: #2F5376;
-  border-top:1px solid #F7F7F7;
-  border-bottom:1px solid #F7F7F7;
+
 }
 .socialmenuicons {display:inline;margin-left:20px;font-size:36px;}
 .sicon {padding-left:15px;color:#F7F7F7;}
@@ -55,21 +54,17 @@
 }
 #toggle-button2 {
 	background:#2F5376;
-	border-top:1px solid #F7F7F7;
-	border-bottom:1px solid #F7F7F7;
-	border-right:1px solid #F7F7F7;
 	padding-left:3px;
 	padding-top:8px;
     position: absolute;
     top: 0;
     left: 265px;
     color: #2F5376;
-    height: 55px;
+    height: 52px;
     width: 49px;
     text-align: center;
     line-height: 49px;
     cursor: pointer;
-    border-radius: 0 4px 4px 0;
 }
 .buttonicon {color:#F7F7F7;margin-right:5px;}
 .buttonicon:hover {color:#EB1C23;}
@@ -77,8 +72,8 @@
 .buttonsearch:hover {color:#33FF33;}
 #demo-switcher-search {
   position: fixed;
-  top: 90px;
-  z-index: 50;
+  bottom:2px;
+   z-index: 9999;
   right: -265px;
   transition: .4s;
 }
@@ -87,8 +82,6 @@
 }
 #demo-menu-search {
 	height:50px;
-	border-bottom:1px solid #F7F7F7;
-	border-top:1px solid #F7F7F7;
     width: 265px;
     margin: 0;
     padding-top: 10px;
@@ -99,9 +92,6 @@
 }
 #toggle-button-search {
 	background:#2F5376;
-	border-top:1px solid #F7F7F7;
-	border-bottom:1px solid #F7F7F7;
-	border-left:1px solid #F7F7F7;
     position: absolute;
     top: 0;
     right: 265px;
@@ -111,5 +101,4 @@
     text-align: center;
     line-height: 49px;
     cursor: pointer;
-    border-radius: 4px 0px 0px 4px;
 }
