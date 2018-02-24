@@ -40,9 +40,10 @@ body {background-color:#E1E1E1;font-family: 'Open Sans', sans-serif;line-height:
 .xfblock:hover {background:#FBFBD6; border:1px solid #DBEAF9;box-shadow:0 0 7px #DBEAF9;}
 /* Footer */
 .xfooter {width:100%;bottom:0;position:fixed;height:55px;background:#2F5376;border-top:1px solid #F6EEBF;border-bottom:1px solid #F6EEBF;z-index:9000;}
-.footercontent {text-align:center;color:#000;}
+.footercontent {text-align:center;color:#000;margin-top:15px;}
 .footercontent a:link{color:#F7F7F7;}
 .footercontent a:hover{color:#00D4FF;}
+.xoopslogo img{max-width:30px;position:absolute;padding-left:5px;}
 /* Top and Middle sliders */
 .topslider {margin-top:80px;border-bottom:1px solid #F6EEBF;}
 .middleslider {padding-right:20px;padding-left:20px;}
@@ -56,7 +57,7 @@ body {background-color:#E1E1E1;font-family: 'Open Sans', sans-serif;line-height:
 #background_cycler img.active{z-index:3}
 .custombanner {margin-bottom:-20px;}
 .fastmenu {float:left;margin-top:22px;}
-.fi{font-size: 28px !important;line-height: 32px;}
+.fi{font-size: 36px !important;line-height: 30px;}
 .fixx {display:none;}
 .pop_li{font-size: 12px;}
 .fa-bars{color: #F7F7F7;font-size: 32px !important;margin-left:15px;}
@@ -67,6 +68,15 @@ body {background-color:#E1E1E1;font-family: 'Open Sans', sans-serif;line-height:
 .searchbtn:hover {background:#33FF33;}
 iframe, img {max-width:100%;}
 #com_text {max-width:80%;}
+header, a, img, i, span, iframe, em{transition: all 1s;-moz-transition: all 1s;-webkit-transition: all 1s; -o-transition: all 1s;}
+header.small{height: 50px;opacity:0.8; }
+header.small img{height: 25px; margin-top: -5px;}
+header.small>.fastmenu {margin-top:18px;}
+header.small>.fastmenu span>i{font-size: 18px;margin-top:-10px; z-index:10}
+header.small ul{padding-top:5px!important;}
+header.small em{display:none;}
+.fastfooter {display:none;}
+#fastfooter {opacity:0.8;}
 /* Media */
 @media (max-width: 479px) {
 .m479 {margin-left:-29px;width:115%;}

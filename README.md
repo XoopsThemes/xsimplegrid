@@ -10,7 +10,7 @@ Visit us on http://xoops.org
 
 Theme name: xsimplegrid
 
-Version 1.2 Final (for XOOPS 2.5.9)
+Version 1.3 Final (for XOOPS 2.5.9)
 
 This is mobile responsive theme for XOOPS CMS / www.xoops.org
 

@@ -29,17 +29,18 @@
 jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(window).scroll(function() {if (jQuery(this).scrollTop() > offset) {jQuery('.back-to-top').fadeIn(duration);
 } else {jQuery('.back-to-top').fadeOut(duration);}});jQuery('.back-to-top').click(function(event) {event.preventDefault();jQuery('html, body').animate({scrollTop: 0}, duration);return false;})});
 </script>
+<script>$(document).on("scroll",function(){if($(document).scrollTop()>100){ $("header").removeClass("large").addClass("small");}else{$("header").removeClass("small").addClass("large");}});</script>
 </head> 
 <body>	
-<div class="xheader">
+<header class="xheader">
 <div class="fastmenu">
 <{includeq file="$theme_name/tpl/fastmenu.tpl"}>
 </div>
 <div class="mobilecontent grid">
 <div class="xlogo"><a href="<{xoAppUrl /}>" title="<{$xoops_sitename}>"><img src="<{xoImgUrl}>images/logo.png" alt="<{$xoops_sitename}>" /></a></div>
-<div class="xbanner mhide"><{$xoops_banner}></div>
+<div class="xbanner mhide"><em><{$xoops_banner}></em></div>
 </div>
-</div>
+</header>
 <div class="dnone2">
 <{includeq file="$theme_name/tpl/backslider.tpl"}>
 </div>
@@ -49,6 +50,8 @@ jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(wi
 <{/if}>	
 </div>
 <{includeq file="$theme_name/tpl/content.tpl"}>
+<script>$(document).on("scroll",function(){if($(document).scrollTop()<300){ $("footer").addClass("fastfooter")}else{$("footer").removeClass("fastfooter")}});</script>
+<footer class="fastfooter" id="fastfooter">
 <div id="demo-switcher">
 <div id="demo-menu">
 <div class="socialmenu">
@@ -78,13 +81,12 @@ jQuery(document).ready(function() {var offset = 220;var duration = 500;jQuery(wi
 <div class="xfooter">
 <div class="footercontent">
 <{$xoops_footer}>
-<span class="fnone">
-<a href="http://xoops.org" title="XOOPS" target="_blank">
-<img src="<{xoImgUrl}>images/favicon.png" alt="xoops">
-</a>
+<span class="xoopslogo fnone">
+<img src="<{xoImgUrl}>images/favicon.png" alt="xoops logo">
 </span>
 </div>
 </div>
+</footer>
 <script type="text/javascript" src="<{xoImgUrl}>js/jquery.popmenu.js"></script>
 </body>
 </html>
